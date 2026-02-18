@@ -37,6 +37,7 @@ public class ProductService {
         product.setImageType(imageFile.getContentType());
         product.setImageDate(imageFile.getBytes());
         return repo.save(product);
+
     }
 
     public void deleteProduct(int id) {

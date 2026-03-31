@@ -18,6 +18,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Product {
 
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
@@ -33,6 +34,6 @@ public class Product {
     private String imageName;
     private String imageType;
     @Lob
-    private byte[] imageDate;
+    private byte[] imageData;
 
 }

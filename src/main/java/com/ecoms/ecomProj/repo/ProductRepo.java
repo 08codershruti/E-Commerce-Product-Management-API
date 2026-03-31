@@ -8,4 +8,5 @@ import com.ecoms.ecomProj.model.Product;
 @Repository
 public interface ProductRepo extends JpaRepository<Product, Integer>{
 
+
 }

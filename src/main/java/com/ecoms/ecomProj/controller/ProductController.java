@@ -22,9 +22,6 @@ import com.ecoms.ecomProj.model.Product;
 import com.ecoms.ecomProj.service.ProductService;
 
 
-
-
-
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api")
@@ -67,7 +64,7 @@ public class ProductController {
     public ResponseEntity<byte[]> getImageByProductId(@PathVariable int productId){
 
         Product product = service.getProductById(productId);
-        byte[] imageFile = product.getImageDate();
+        byte[] imageFile = product.getImageData();
 
         return ResponseEntity.ok()
                 .contentType(MediaType.valueOf(product.getImageType()))
